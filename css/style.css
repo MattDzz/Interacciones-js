@@ -1,0 +1,234 @@
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
+
+*{
+    font-family: 'Bebas Neue', sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    width: 100%; /*Altura */
+    min-height: 100vh; /*Alto minimo */
+    text-align: center;
+    background: url("../img/anime-cometa-en-cielo-anocheciendo_3840x2160_xtrafondos.com.png");
+    background-size: cover;
+}
+
+#interacciones{
+    width: 90%;
+    margin: 0 auto;
+    padding: 40px;
+    background: #0000009f;
+    border-radius: 10px;
+    border: 2px solid #fff;
+    backdrop-filter: blur(10px);
+}
+
+#interacciones h2{
+    color: rgb(148, 149, 155);
+    font-size: 50px;
+    margin-bottom: 25px;
+}
+
+#interacciones button{
+    background: #000;
+    color: rgb(242, 243, 243);
+    border-radius: 15px;
+    padding: 20px;
+    border: 8px solid  rgb(246, 242, 242); /*rgb es  para las trasparencias */
+    margin: 15px auto 0;
+    font-size: 20px;
+}
+
+#cont-figura{
+    width: 50%;
+    margin: 0 auto;
+    padding: 40px;
+    background: #0000004f;
+    border-radius: 8px;
+    border: 2px solid #fff;
+    backdrop-filter: blur(10px);
+}
+
+#figura{
+    width: 300px;
+    height: 300px;
+    background: #0000004f;
+    margin: 40px auto;
+    transition: 2s;
+}
+
+#figura.circulo{
+    transform: rotate(-360deg);
+    border-radius: 50%;
+    background: rgba(241, 150, 4, 0.685);
+}
+
+#figura.rectangulo{
+    width: 600px;
+    background: rgba(255, 17, 0, 0.555);
+}
+
+#figura.degradado{
+    border-radius: 25%;
+    background: rgb(2,0,36);
+background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(96,96,170,1) 46%, rgba(0,212,255,1) 100%);
+}
+/*Esta madre es para el degradado por si lacosas  la pagina es css gradient*/
+
+#figura.ondas{
+    width: 300px;
+    height: 300px;
+    background-color: rgb(227, 227, 236);
+    animation: wave 2s linear infinite;
+    transform: rotate(-360deg);
+}
+
+@keyframes wave {
+    0% {
+    background-color: rgb(255, 153, 0);
+    }
+    50% {
+    background-color: rgb(255, 217, 0);
+    }
+    100% {
+    background-color: rgb(166, 255, 0);
+    }
+}
+#figura.rombo{
+    width: 200px; 
+    height: 200px; 
+    border: 5px solid #555555; 
+    background: #ca6942;
+    transform: rotate(45deg);
+    }
+
+#figura.triangulo{
+    width: 0;
+    height: 0;
+    border-right: 150px solid transparent;
+    border-top: 150px solid transparent;
+    border-left: 150px solid transparent;
+    border-bottom: 150px solid #0ce2adcc;
+}
+
+#figura.gif{
+    background: url("../img/jake_cock.gif");
+    width: 300px;
+    height: 300px;
+    background-size: cover;
+    background-position: center;
+    background-repeat:no-repeat;
+    
+}
+.bg2{
+    background: url("../img/akaza-de-kimetsu-no-yaiba_3840x2160_xtrafondos.com.jpg");
+}
+#figura.fondofigura{
+    background: url("../img/personajes-demon-slayer-kimetsu-no-yaiba_3840x2160_xtrafondos.com.png");
+    width: 700px;
+    height: 500px;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+#figura.pacman{
+    width:0;
+    height:0;
+    border-right: 200px solid transparent; 
+    border-top: 200px solid #b8b25c; 
+    border-left: 200px solid #b8b25c; 
+    border-bottom: 200px solid #b8b25c; 
+    border-radius: 100%;
+}
+
+#panel-lateral {
+    width: 400px;
+    height: 100%;
+    position: absolute;
+    left: -450px;
+    top: 0;
+    background-color: rgb(255, 245, 245);
+    z-index: 998;
+    padding-top: 150px;
+    padding-left: 20px;
+    transition: .5s;
+}
+
+#panel-lateral h3 {
+    color: rgb(12, 12, 12);
+    text-align: left;
+    font-size: 2em;
+    margin-bottom: 20px;
+}
+
+#panel-lateral a {
+    display: block;
+    padding: 20px;
+    width: 220px;
+    background: #000000;
+    color: aliceblue;
+    margin: 5px 0;
+    text-decoration: none;
+}
+
+#panel-lateral a:hover {
+    background-color: #4e96b8;
+}
+
+#panel-lateral.active {
+    left: 0px;
+}
+
+.close {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    color: #000000;
+    font-size: 3em;
+    background: transparent;
+    border: none;
+    cursor: pointer;
+}
+
+/* 
+#panel-lateral.close {
+    position: absolute;
+    top: 20px;
+    left: 20px;
+    color: #000000;
+    font-size: 3em;
+    background: transparent;
+    border: none;
+    cursor: pointer;
+} */
+
+#panel-superior{
+    width: 100%;
+    height: 100vh;
+    position: absolute;
+    left: 0;
+    top: -2000px    ;
+    background: url('../img/gif2.webp');
+    background-size: cover;
+    z-index: 999;
+    padding-top: 150px;
+    padding-left: 20px;
+    transition: .5s;
+}
+
+#panel-superior.active2{
+    top: 0px;
+}
+
+.close2{
+    position: absolute;
+    top: 20px;
+    right: 50px;
+    color: #ffff;
+    font-size: 3em;
+    background: transparent;
+    border: none;
+    cursor: pointer;
+}

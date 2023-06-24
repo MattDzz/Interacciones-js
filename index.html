@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Interacciones con JS</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <section id="interacciones">
+        <h2>INTERACCIONES Y  MANIPULACION DE HTML Y CSS CON JS</h2>
+
+        <button onclick="circulo()">CIRCULO</button>
+        <BUtton onmouseover="rectangulo()">RECTANGULO</BUtton>
+        <button onclick="degradado()">DEGRADADO</button>
+        <button onclick="ondas()">ONDAS</button>
+        <BUtton onclick="gif()">GIF</BUtton>
+        <BUtton onclick="rombo()">ROMBO</BUtton>
+        <BUtton onclick="triangulo()">TRIANGULO</BUtton>
+        <BUtton onclick="panel_lateral()">PANEL LATERAL</BUtton>
+        <BUtton onclick="panel_superior()">PANEL SUPERIOR</BUtton>
+        <button onclick="fondo()">FONDO</button>
+        <BUtton onclick="fondofigura()">FONDO FIGURA</BUtton>
+        <button onclick="pacman()">Pac Man</button>
+    </section>
+
+    <section id="cont-figura">
+
+        <div id="figura" class=""></div>
+
+    </section>
+
+        <div id="panel-lateral" class="">
+        <button onclick="panel_lateral()" class="close">X</button>
+        <h3>Menu</h3>
+        <ul>
+            <a href="#">Inicio</a>
+            <a href="#">Productos</a>
+            <a href="#">Ventas</a>
+        </ul>
+    </div>
+
+    <div id="panel-superior" class="">
+        <button onclick="panel_superior()" class="close2">X</button>
+        <iframe width="560" height="315" src="https://www.youtube.com/embed/2rye4u-cCNk" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+    </div>
+
+    <script src="js/main.js">	</script>
+</body>
+</html>
